@@ -54,6 +54,7 @@ const setUpRows = (ctx, cols, refresh = false) => {
  * @param  {Boolean}   markasComplete   - Mark elements as complete
  */
 export function shuffle (ctx, $eles, refresh = false, markasComplete = true) {
+  console.log('MACY SHUFFLE : markasComplete? ' + (markasComplete? 'true':'false'));
   let cols = getCurrentColumns(ctx.options);
   let margin = getCurrentMargin(ctx.options).y;
   setUpRows(ctx, cols, refresh);
